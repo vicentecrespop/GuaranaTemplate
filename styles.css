@@ -1,0 +1,617 @@
+:root {
+    --background-green: #00873e;
+    --padding-right: 200px;
+    --padding-left: 160px;
+    --hero-container-height: 570px;
+    --hero-container-text-width: 400px;
+    --navbar-height: 120px;
+}
+
+body, h1 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: var(--navbar-height);
+    background-color: #fff;
+}
+
+.navbar-top {
+    background-color: #00873e;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px var(--padding-right);
+}
+
+.navbar-top--socials a {
+    color: transparent;
+    height: 100%;
+    margin: 10px;
+}
+
+.navbar-top--socials svg {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.navbar-bottom {
+    display: flex;
+    align-items: center;
+    padding: 20px var(--padding-right) 20px var(--padding-left);
+    background-color: #fff;
+}
+
+.navbar-bottom img {
+    width: 150px;
+    margin-right: 65px;
+}
+
+.navbar-bottom--button {
+    display: none;
+}
+
+.navbar-bottom--items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navbar-bottom--items--left span {
+    margin-right: 15px;
+}
+
+.navbar-bottom--items--right {
+    background-color: var(--background-green);
+    padding: 7px 30px;
+    border-radius: 20px;
+}
+
+.navbar-bottom--items--right a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    padding-top: var(--navbar-height);
+    overflow: hidden;
+}
+
+.hero-container {
+    height: var(--hero-container-height);
+    background-color: var(--background-green);
+}
+
+#sabor-do-brasil {
+    background-image: url('https://www.guaranaantarctica.com.br/sites/g/files/wnfebl5706/files/styles/webp/public/users/Guaran%C3%A1%20-%20Banners/Assets%20Desk/Header_Home_2%402x_0.png.webp?itok=u8FxhahB');
+    background-size: cover;
+    background-position: 10%;
+}
+
+.hero-container--text--left {
+    color: #fff;
+    width: var(--hero-container-text-width);
+    margin-left: var(--padding-left);
+    padding-top: 150px;
+}
+
+.hero-container--text--left h1 {
+    font-family: 'Kranat', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero-container--text--left p {
+    font-size: 14px;
+}
+
+#naturalize-ja {
+    background-image: url('https://www.guaranaantarctica.com.br/sites/g/files/wnfebl5706/files/styles/webp/public/Guaran%C3%A1/AJUSTES%20NOVOS/BANNER%20HOME%20N/BANNER%20HOME%20NATU.png.webp?itok=KECDI5mV');
+    background-size: cover;
+    background-position: 10%;
+    position: relative;
+}
+
+.hero-container--text--right {
+    height: auto;
+    width: 350px;
+    position: absolute;
+    top: 150px;
+    right: var(--padding-right);
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.hero-container--text--right h1 {
+    color: var(--background-green);
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.hero-container--text--right p {
+    font-size: 21px;
+    margin: 4px;
+}
+
+.hero-container--text--right a {
+    background-color: var(--background-green);
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.hero-container--campaign {
+    height: 520px !important;
+    background-image: url('https://www.guaranaantarctica.com.br/sites/g/files/wnfebl5706/files/styles/webp/public/users/Guaran%C3%A1%20-%20Banners/Assets%20Desk/BG%20Campanhas_1.png.webp?itok=pxaWWqtJ');
+    background-size: cover;
+    background-position: 10%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-container--campaign--text {
+    width: 25vw;
+    position: relative ;
+    left: 100px;
+}
+
+.hero-container--campaign--text h1{
+    font-weight: bold;
+    color: #ffcc00;
+    text-transform: uppercase;
+    font-size: 40px;
+    width: 25vw;
+}
+
+.hero-container--campaign--text p {
+    color: #fff;
+    width: fit-content;
+}
+
+.hero-container--campaign--banners {
+    position: relative;
+    top: 0px;
+    left: 130px;
+    height: 370px;
+    display: flex;
+}
+
+.hero-banner--container {
+    height: 100%;
+    width: 370px;
+
+    color: #fff;
+    margin-right: 20px;
+    box-shadow: 2px 14px 29px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 14px 29px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 14px 29px -7px rgba(0,0,0,0.75);
+    position: relative;
+    bottom: 0px;
+    transition: bottom 150ms ease-in;
+}
+
+.hero-banner--container:hover {
+    bottom: 20px;
+}
+
+.hero-banner--container--button {
+    position: absolute;
+    top: 140px;
+    left: 145px;
+    color: #000;
+    padding: 25px;
+    border: 3px solid #000;
+    border-radius: 50px;
+}
+
+.hero-banner--container--text {
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.06206232492997199) 0%, rgba(0,0,0,0.835171568627451) 75%, rgba(0,0,0,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 20px 25px;
+}
+
+.hero-banner--container--text span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero-banner--container--text p {
+    margin: 0;
+    margin-top: 10px;
+}
+
+#natal-brasileiro {
+    background-image: url('https://www.guaranaantarctica.com.br/sites/g/files/wnfebl5706/files/styles/video_card_mobile/public/Guaran%C3%A1/Natal-280x360.png.webp?itok=YTed7Qum');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vai-ficar-em-casa {
+    background-image: url('https://www.guaranaantarctica.com.br/sites/g/files/wnfebl5706/files/styles/video_card_mobile/public/Guaran%C3%A1/Pipoca-280x360.png.webp?itok=7Qsb7MYH');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#futebol-feminino {
+    background-image: url('https://www.guaranaantarctica.com.br/sites/g/files/wnfebl5706/files/styles/video_card_mobile/public/Guaran%C3%A1/FutFem-280x360.png.webp?itok=PiDgJWUW');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#dia-da-mulher {
+    background-image: url('https://www.guaranaantarctica.com.br/sites/g/files/wnfebl5706/files/styles/video_card_mobile/public/Guaran%C3%A1/HATERS-280x360.png.webp?itok=7n33dxUX');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-container--products {
+    height: 650px;
+    background-image: url('https://www.guaranaantarctica.com.br/sites/g/files/wnfebl5706/files/styles/webp/public/users/Guaran%C3%A1%20-%20Banners/Assets%20Desk/Grupo%2017052%402x_2.png.webp?itok=5akqsgPX');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-container--products--text {
+    width: 380px;
+    position: relative ;
+    left: 100px;
+}
+
+.hero-container--products--text h1 {
+    color: #e42d26;
+    font-family: Kranafat, sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.hero-container--products--text p {
+    margin: 10px 0 25px 0;
+}
+
+.hero-container--products--text a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.hero-container--products--images {
+    position: relative;
+    left: 200px;
+    width: 100%;
+    display: flex;
+}
+
+.hero--products--images--container {
+    width: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 100px;
+    position: relative;
+    height: 300px;
+}
+
+.hero--products--images--container:hover span, .hero--products--images--container:hover a {
+    opacity: 1;
+}
+
+.hero--products--images--container img {
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    transition: bottom 200ms ease-in
+}
+
+.hero--products--images--container:hover img {
+    bottom: 150px;
+}
+
+.hero--products--images--container span {
+    text-transform: uppercase;
+    color: var(--background-green);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    opacity: 0;
+}
+
+.hero--products--images--container a {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--background-green);
+    padding: 7px 20px;
+    border-radius: 30px;
+
+    opacity: 0;
+    transition: opacity 100ms ease-in;
+}
+
+.footer-top {
+    background-color: #005430;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 8px 90px 8px 100px;
+}
+
+.footer-top img {
+    width: 55px;
+    margin-right: 200px;
+}
+
+.footer-top a {
+    color: #fff;
+    font-weight: bold;
+    margin-left: 35px;
+    font-size: 12px;
+}
+
+.footer-top--socials {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-top--socials a {
+    color: transparent;
+    margin: 0 10px;
+}
+
+.footer-top--socials svg {
+    color: #fff;
+}
+
+.footer-bottom {
+    display: flex;
+    color: #555;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding: 0 70px 0 100px;
+}
+
+.footer-bottom span {
+    margin: 15px 0 40px 0;
+}
+
+.footer-bottom--links a {
+    color: #555;
+    width: 30px;
+    height: 100%;
+    margin-right: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    :root {
+        --padding-left: 60px;
+        --navbar-height: 90px;
+    }
+ 
+    .navbar-top {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 5%;
+    }
+
+    .navbar-top--socials {
+        margin-top: 3px;
+    }
+
+    .navbar-top--socials a {
+        margin-top: 2px;
+        margin: 5px;   
+    }
+
+    .navbar-bottom {
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 10px 5%;
+    }
+
+    .navbar-bottom--button {
+        -webkit-mask-image: url('assets/navbar-hamburguer.svg');
+        background-color: #00873e;
+        width: 30px;
+        height: 30px;
+        border: none;
+        padding: 0;
+        display: block;
+    }
+
+    .navbar-bottom--items {
+        display: none;
+    }
+
+    #sabor-do-brasil {
+        background-image: url('https://www.guaranaantarctica.com.br/sites/g/files/wnfebl5706/files/styles/webp/public/users/user821/Grupo%2016884%402x.png.webp?itok=OEZ6xfIS');
+        background-size: cover;
+    }
+
+    #naturalize-ja {
+        background-image: url('https://www.guaranaantarctica.com.br/sites/g/files/wnfebl5706/files/styles/webp/public/banner1_mob.png.webp?itok=-lVmW18U');
+        background-size: cover;
+    }
+
+    .hero p {
+        line-height: 23px;
+    }
+
+    .hero-container--text--left, .hero-container--text--right {
+        width: 100%;
+        top: 0;
+        text-align: start;
+        align-items: start;
+        right: unset;
+        box-sizing: border-box;
+        padding: 30px 5% 0 5%;
+        margin-left: unset;
+    }
+
+    .hero-container--text--left h1 {
+        font-size: 32px;
+    }
+
+    .hero-container--text--left p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .hero-container--text--right h1 {
+        font-size: 32px;
+    }
+
+    .hero-container--campaign {
+        flex-direction: column;
+        align-items: start;
+        height: auto;
+        background-position: 50% 0%;
+    }
+
+    .hero-container--campaign--text {
+        left: 0;
+        padding: 0 5%;
+        box-sizing: border-box;
+        margin: 20px 0 30px 0;
+        width: 100%;
+    }
+
+    .hero-container--campaign--banners {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: unset;
+        margin-bottom: 70px;
+    }
+
+    .hero-banner--container {
+        width: 280px;
+    }
+
+    .hero-banner--container--button {
+        left: 100px;
+        top: 140px;
+    }
+
+    .hero-container--products {
+        flex-direction: column;
+        height: 890px;
+        background-image: url('https://www.guaranaantarctica.com.br/sites/g/files/wnfebl5706/files/styles/webp/public/Guaran%C3%A1/BG%20MOB%20NOSSOS%20PRODUTOS.png.webp?itok=83tyi9b3');
+
+    }
+
+    .hero-container--products--text {
+        width: 100%;
+        left: 0;
+        padding: 0 5%;
+        box-sizing: border-box;
+        margin: 20px 0 200px 0;
+    }
+
+    .hero-container--products--images {
+        position: absolute;
+        left: 10px;
+        top: 410px;
+        width: unset;
+    }
+
+    .hero-container--products--text h1 {
+        width: 200px;
+    }
+
+    .hero--products--images--container {
+        width: 150px;
+        margin-bottom: 120px;
+        margin-right: 30px;
+    }
+
+    .hero--products--images--container img {
+        width: 160px;
+    }
+
+    .hero--products--images--container:first-child * {
+        opacity: 1;
+        font-size: 16px;
+    }
+
+    .hero--products--images--container:first-child a {
+        margin-bottom: -60px;
+        font-weight: bold;
+    }
+
+    .footer-top {
+        flex-direction: column;   
+        padding-bottom: 40px;
+    }
+
+    .footer-top img {
+        margin:  50px 0 15px 0;
+        width: 150px;
+    }
+
+    .footer-top--socials {
+        margin-bottom: 20px;
+    }
+
+    .footer-top > a {
+        margin: 10px 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        padding: 10px 30px 35px 30px;
+    }
+
+    .footer-bottom--links {
+        max-width: 530px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .footer-bottom--links > a {
+        padding-bottom: 15px;
+    }
+
+}
+
+
+/* 
+
+    Arrumar botão hamburguer
+
+*/
